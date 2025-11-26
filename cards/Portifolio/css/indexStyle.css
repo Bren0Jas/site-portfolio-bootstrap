@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to left, aqua, rgb(0, 255, 191));
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* Adicionado margem inferior para o rodapé fixo não cobrir o conteúdo */
+  margin-bottom: 50px; 
+}
+
+header {
+  background: linear-gradient(to left, rgb(208, 255, 0), rgb(0, 255, 255));
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+/* Estilos para o elemento NAV */
+nav {
+  /* Removido: float: left; width: 30%; height: 300px; - Gerenciado pelo Bootstrap col-md-3 */
+  background: linear-gradient(to left, rgb(0, 255, 191), aqua);
+  padding: 20px;
+  /* Ajuste para o canto superior esquerdo em mobile e telas grandes */
+  border-radius: 5px 5px 0 0; 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilos para o elemento ARTICLE */
+article {
+  /* Removido: float: left; width: 70%; height: 300px; - Gerenciado pelo Bootstrap col-md-9 */
+  background-color: #987878;
+  padding: 20px;
+  background: linear-gradient(to right, rgb(0, 255, 191), rgb(0, 204, 255));
+  /* Ajuste para o canto inferior direito em mobile e telas grandes */
+  border-radius: 0 0 5px 5px; 
+}
+
+/* Estilos para a SECTION (agora container) */
+section {
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  /* Removido: section::after e section */
+}
+
+/* Estilo para rodapé fixo */
+footer {
+  position: fixed;
+  bottom: 0; /* Simplificado: 0px */
+  left: 0; /* Simplificado: 0px */
+  width: 100%;
+  background-color: #C9C9C9;
+  padding: 1px;
+  color: #666;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, rgb(0, 255, 149), rgb(208, 255, 0));
+  text-align: center; /* Centralizar conteúdo do rodapé */
+  z-index: 10; /* Garante que fique acima de outros elementos */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: red;
+  cursor: pointer;
+}
+
+
+/* Media Query para telas médias e maiores, reverte o border-radius para o layout lado a lado */
+@media (min-width: 768px) { /* min-width para telas médias (md) e acima */
+  nav {
+    /* Bordas arredondadas do lado esquerdo quando estão lado a lado */
+    border-radius: 5px 0 0 5px; 
+  }
+
+  article {
+    /* Bordas arredondadas do lado direito quando estão lado a lado */
+    border-radius: 0 5px 5px 0; 
+  }
+}
+
+/* A media query original de (max-width=600px) não é mais necessária para o layout de nav/article 
+   porque o Bootstrap (col-12) já gerencia isso */

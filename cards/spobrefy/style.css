@@ -1,0 +1,92 @@
+body {
+  background-image: linear-gradient(
+    rgb(59,88,93),  
+    rgb(29,40,42)
+    );
+  /* Usar min-height para evitar corte em mobile */
+  min-height: 100vh; 
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Novo seletor para garantir responsividade e centralização do player */
+.music-container {
+    max-width: 500px; 
+    width: 90vw; /* Ocupa 90% da largura do viewport em telas menores */
+    margin: 0 auto; /* Centraliza */
+    padding: 20px;
+}
+
+
+#below-cover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3em 0 1em 0;
+  /* Garante que ocupe a largura total do container */
+  width: 100%; 
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* Garante que ocupe a largura total do container */
+  width: 100%;
+}
+
+/* Ajustes leves no tamanho dos ícones */
+.button {
+  font-size: 1.8em;
+}
+
+.button-navigate{
+  font-size: 3.5em;
+}
+
+.button-biggest {
+  font-size: 4.5em;
+}
+
+#cover{
+  /* Mudança crucial para responsividade: max-width e width em % */
+  max-width: 450px;
+  width: 100%; 
+  height: auto;
+}
+
+#playlist-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1em 0 2em 0; /* Diminuído a margem inferior */
+}
+
+#song-name {
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+.light-color {
+  color:#88999c
+}
+
+#progress-bar {
+  background-color: rgb(139,153,156);
+  height: 3px;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+
+#current-progress {
+  background-color: white;
+  height: inherit;
+  width: 50%; /* Mantido em 50% apenas para visualização estática */
+  border-radius: inherit;
+}
