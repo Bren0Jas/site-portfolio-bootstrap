@@ -12,16 +12,6 @@ Este projeto é uma landing page de portfólio para Breno José, um Desenvolvedo
 
 O site foi construído seguindo as boas práticas de desenvolvimento web, utilizando HTML semântico, CSS personalizado e a estrutura do framework Bootstrap (versão 5.3) para garantir responsividade completa em dispositivos móveis, tablets e desktops.
 
-📋 Requisitos e Tecnologias
-
-HTML5 (Estrutura semântica)
-
-Bootstrap 5.3 (Navbar, Grid Responsivo, Cards, Botões)
-
-CSS Customizado (Estilização específica via <style> tag, simulando css/style.css)
-
-Responsividade (Utilização do sistema de grid col-sm-, col-md-, col-lg-)
-
 Dados do Aluno
 
 Nome Completo: Breno José Alcântara de Santana
