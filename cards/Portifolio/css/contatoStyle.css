@@ -1,4 +1,3 @@
-/* Conteúdo CSS do seu <style> e do contatoStyle.css */
 * {
   box-sizing: border-box;
 }
@@ -8,7 +7,6 @@ body {
   flex-direction: column;
   background: linear-gradient(to left, aqua, rgb(0, 255, 191));
   font-family: Georgia, 'Times New Roman', Times, serif;
-  /* Adicionado margem inferior para o rodapé fixo não cobrir o conteúdo */
   margin-bottom: 70px; 
 }
 
@@ -22,26 +20,18 @@ header {
   border-radius: 5px;
 }
 
-/* Estilos para a SECTION (agora container com row) */
 section {
-  /* Removido: display: flex; justify-content: space-between; height: 30%; */
   padding: 0; 
-  /* Removido: box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5); border-radius: 5px; - Aplicado diretamente na div.row */
 }
 
-/* Estilos para o elemento NAV */
 nav {
   background: linear-gradient(to left, rgb(0, 204, 255), aqua);
   padding: 20px;
-  /* Ajuste para o canto superior esquerdo em mobile e telas grandes */
   border-radius: 5px 5px 0 0; 
 }
 
-/* Estilos para a lista de contatos (UL) que está ao lado da NAV */
 .col-md-9 ul {
-  /* Estilo para o conteúdo (anteriormente article) */
   background: linear-gradient(to right, rgb(0, 255, 191), rgb(0, 204, 255));
-  /* Ajuste para o canto inferior direito em mobile e telas grandes */
   border-radius: 0 0 5px 5px; 
 }
 
@@ -52,18 +42,16 @@ ul {
 }
 
 #menu {
-  /* Removido: margin-right: 200px; */
   margin: 0;
 }
 
-/* Estilo para rodapé fixo */
 footer {
   position: fixed;
   bottom: 0; 
   left: 0; 
   width: 100%;
   background-color: #C9C9C9;
-  padding: 15px 20px; /* Ajustado para melhor visualização */
+  padding: 15px 20px;
   text-align: center;
   color: #666;
   box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
@@ -81,15 +69,12 @@ a:hover{
   cursor: pointer;
 }
 
-/* Media Query para telas médias e maiores, reverte o border-radius para o layout lado a lado */
-@media (min-width: 768px) { /* min-width para telas médias (md) e acima */
+@media (min-width: 768px) { 
   nav {
-    /* Bordas arredondadas do lado esquerdo quando estão lado a lado */
     border-radius: 5px 0 0 5px; 
   }
 
   .col-md-9 {
-    /* Bordas arredondadas do lado direito quando estão lado a lado */
     border-radius: 0 5px 5px 0; 
   }
 }
