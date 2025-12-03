@@ -3,7 +3,6 @@ body {
     rgb(59,88,93),  
     rgb(29,40,42)
     );
-  /* Usar min-height para evitar corte em mobile */
   min-height: 100vh; 
   color: white;
   font-family: sans-serif;
@@ -12,11 +11,11 @@ body {
   align-items: center;
 }
 
-/* Novo seletor para garantir responsividade e centralização do player */
+
 .music-container {
     max-width: 500px; 
-    width: 90vw; /* Ocupa 90% da largura do viewport em telas menores */
-    margin: 0 auto; /* Centraliza */
+    width: 90vw; 
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -27,7 +26,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 3em 0 1em 0;
-  /* Garante que ocupe a largura total do container */
   width: 100%; 
 }
 
@@ -36,11 +34,11 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /* Garante que ocupe a largura total do container */
+
   width: 100%;
 }
 
-/* Ajustes leves no tamanho dos ícones */
+
 .button {
   font-size: 1.8em;
 }
@@ -54,7 +52,7 @@ body {
 }
 
 #cover{
-  /* Mudança crucial para responsividade: max-width e width em % */
+
   max-width: 450px;
   width: 100%; 
   height: auto;
@@ -64,7 +62,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 1em 0 2em 0; /* Diminuído a margem inferior */
+  margin: 1em 0 2em 0;
 }
 
 #song-name {
@@ -87,6 +85,6 @@ body {
 #current-progress {
   background-color: white;
   height: inherit;
-  width: 50%; /* Mantido em 50% apenas para visualização estática */
+  width: 50%;
   border-radius: inherit;
 }
